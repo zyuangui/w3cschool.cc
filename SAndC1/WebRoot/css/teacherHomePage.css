@@ -1,0 +1,32 @@
+
+
+@charset "utf-8";
+/* CSS Document */
+*{ margin:0; padding:0; list-style:none; text-decoration:none;}
+.body{ margin:20px auto; width:1000px; height:auto; position:relative; }
+.body .body-head{ margin-top:15px; width:100%; height:150px; background:rgba(0,0,0,0.40);}
+.body .body-head .body-head-left{ width:150; height:150px; border:1px dashed #eee;  margin-right:20px; float:left;}
+.body .body-head .body-head-right{width:500px; height:150px; text-align:center; position:absolute; top:45px; left:170px;}
+.body .body-head .body-head-right td{ width:auto; height:30px; color:white;}
+.body .body-left{ margin-top:15px; width:170px; height:550px; background:white; border-radius:4px;}
+.body .body-left ul{width:170px;}
+.body .body-left ul a{ display:block; width:170px; height:40px; line-height:40px; text-indent:25px; margin-bottom:3px; font-size:16px;}
+.body .body-left ul a:hover,.body .body-left a.Home,.body .body-left a.Home2{background:rgba(73,146,233,1.00); color:white;}
+
+.body .body-right{ background:rgba(252,249,249,1.00); width:815px; height:700px; position:absolute; left:185px; top:165px;border-radius:0 0 6px 4px;}
+
+.body .body-right p{text-align:center;margin-top:20px;}
+.body .body-right .body-right1{width:815px; height:60px;border:1px solid red;}
+.body .body-right .body-right2{width:815px; height:430px;border:1px solid red;}
+.body .body-right .body-right3{width:815px; height:90px;border:1px solid red;}
+.body .body-right .body-right3 p strong{}
+.body .body-right table{width:815px; height:650px;}
+.body .body-right table tr td{line-height:15px;}
+.foot{position:absolute; top:0;}
+
+.body .body-right .uploadHw {width:600px;height:600px;border:1px solid red;margin-left:100px;margin-top:30px;}
+
+.body .body-right .uploadHw form {width:550px;height:300px;border:1px solid red;}
+.body .body-right .uploadHw form table{width:550px;height:280px;border:1px solid red;}
+.body .body-right .uploadHw form table tr td{width:200px;height:30px;border:1px solid red;line-height:30px;}
+

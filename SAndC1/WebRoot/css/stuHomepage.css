@@ -1,0 +1,162 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "微软雅黑";
+	list-style: none;
+	text-decoration: none;
+}
+
+body {
+	background: url(images/studentBackground.jpg) no-repeat;
+	background-color: #eaf1fd;
+}
+
+/* 学生主页主体部分的头部 */
+.head {
+	margin: 0 auto;
+	width: 1000px;
+	height: 54px;
+	overflow: hidden;
+	background: rgba(255, 255, 255, 1.00);
+}
+
+.head .logo {
+	float: left;
+}
+
+.head ul {
+	width: 795px;
+	height: auto;
+	overflow: hidden;
+}
+
+.head ul li {
+	line-height: 52px;
+	text-align: center;
+}
+
+.head ul li a {
+	display: block;
+	width: 80px;
+	height: 51px;
+	float: left;
+	line-height: 51px;
+	text-align: center;
+	color: #000;
+}
+
+.head ul li a:hover {
+	border-bottom: 2px solid #6CA3F8;
+	color: #F79A14;
+}
+
+/* 学生主页主体部分的左半边 和右半边*/
+.body {
+	margin: 20px auto;
+	width: 1000px;
+	height: auto;
+	position: relative;
+}
+
+.body .body-head {
+	margin-top: 15px;
+	width: 100%;
+	height: 150px;
+	background: rgba(0, 0, 0, 0.40);
+}
+
+.body .body-head .body-head-left {
+	width: 150px;
+	height: 150px;
+	border: 1px dashed #eee;
+	margin-right: 20px;
+	float: left;
+	position: relactive;
+}
+
+.body .body-head .body-head-left a {
+	width: 145px;
+	height: 30px;
+	border: 3px solid #888;
+	position: absolute;
+	top: 50px;
+	display: block;
+	color: #fff;
+	text-align: center;
+}
+
+.body .body-head .body-head-left a:hover {
+	color: black;
+}
+
+.body .body-head .body-head-right {
+	width: 1000px;
+	height: 150px;
+	text-align: center;
+	position: absolute;
+	top: 50px;
+	left: 170px;
+}
+
+.body .body-head .body-head-right td {
+	width: auto;
+	height: 30px;
+	color: white;
+}
+
+.body .body-left {
+	margin-top: 15px;
+	width: 170px;
+	height: 400px;
+	background: white;
+	border-radius: 4px;
+}
+
+.body .body-left ul {
+	width: 170px;
+}
+
+.body .body-left ul a {
+	display: block;
+	width: 170px;
+	height: 40px;
+	line-height: 40px;
+	text-indent: 25px;
+	margin-bottom: 3px;
+	font-size: 16px;
+}
+
+.body .body-left ul a:hover,.body .body-left a.Home,.body .body-left a.Home2
+	{
+	background: rgba(73, 146, 233, 1.00);
+	color: white;
+}
+
+.body .body-right {
+	background: rgba(252, 249, 249, 1.00);
+	width: 815px;
+	height: 700px;
+	position: absolute;
+	left: 185px;
+	top: 165px;
+	border-radius: 0 0 6px 4px;
+}
+
+/* 学生主页主体部分的尾部 */
+.foot {
+	position: absolute;
+	top: 0;
+}
+
+.foot {
+	width: 100%;
+	height: 100px;
+	background: rgba(73, 146, 233, 1.00);
+	color: white;
+	position: absolute;
+	top: 1000px;
+	line-height: 40px;
+	text-align: center;
+}

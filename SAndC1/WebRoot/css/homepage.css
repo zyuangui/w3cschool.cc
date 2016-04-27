@@ -1,0 +1,393 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	margin: 0;
+	font-size: 16px;
+	text-decoration: none;
+	font: "微软雅黑";
+}
+
+.wrap {
+	width: 1000px;
+	height: auto;
+	margin: 0 auto;
+	position: relative;
+}
+
+.time {
+	width: 125px;
+	height: 30px;
+	padding-top: 10px;
+	float: left;
+	padding-top: 5px;
+	text-align: center;
+}
+
+.head {
+	width: 100%;
+	height: 60px;
+	border-top: 1px solid #B1ADAD;
+	border-bottom: 1px solid #B1ADAD;
+	background: #FFF;
+}
+
+.logo {
+	width: 190px;
+	height: 60px;
+	margin-top: -1px;
+	float: left;
+	overflow: hidden;
+}
+
+.head1 {
+	margin-left: 191px;
+	width: 811px;
+	height: 60px;
+}
+
+.head1 ul {
+	list-style: none;
+}
+
+.head1 a {
+	text-decoration: none;
+	display: block;
+	width: 90px;
+	height: 41px;
+	float: left;
+	text-align: center;
+	padding-top: 19px;
+	font-size: 18px;
+}
+
+.head1 a:hover,.home { /*border-bottom:2px solid #138FDD;*/
+	background: #138FDD;
+	color: #FFF;
+}
+
+.loginBtn {
+	color: #FFF;
+	/*border-bottom:2px solid #138FDD;*/
+	background-color: #789CEF;
+}
+
+.loginBtn a {
+	font-size: 18px;
+	text-decoration: none;
+	display: block;
+	width: 60px;
+	height: auto;
+}
+
+.search {
+	margin: 10px auto;
+	width: 600px;
+	height: auto;
+	text-align: right;
+	margin-left: 400px;
+}
+/*==============================================================================================================*/
+.containerAll {
+	width: 1000px;
+	height: auto;
+}
+
+#container {
+	width: 350px;
+	height: 240px;
+	border: 1px solid #138FDD;
+	overflow: hidden;
+	margin-top: 15px;
+	position: relative;
+	float: left;
+}
+
+#list {
+	width: 2400px;
+	height: 240px;
+	position: absolute;
+	z-index: 1;
+}
+
+#list img {
+	float: left;
+}
+
+#buttons {
+	position: absolute;
+	height: 5px;
+	width: 100px;
+	z-index: 2;
+	bottom: 15px;
+	left: 165px;
+}
+
+#buttons span {
+	cursor: pointer;
+	float: left;
+	border: 1px solid #fff;
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	background: #333;
+	margin-right: 5px;
+}
+
+#buttons .on {
+	background: orangered;
+}
+
+.arrow {
+	cursor: pointer;
+	display: none;
+	line-height: 25px;
+	text-align: center;
+	font-size: 25px;
+	font-weight: bold;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	z-index: 2;
+	top: 110px;
+	background-color: RGBA(0, 0, 0, .2);
+	color: #fff;
+}
+
+.arrow:hover {
+	background-color: RGBA(0, 0, 0, .5);
+}
+
+#container:hover .arrow {
+	display: block;
+}
+
+#prev {
+	left: 10px;
+}
+
+#next {
+	right: 10px;
+}
+
+/*=====================================================================================*/
+.footer333 {
+	position: absolute;
+	top: 1200px;
+	width: 100%;
+	height: 150px;
+	padding-top: 15px;
+	font-size: 14px;
+}
+
+/* 精彩博客*/
+.blogs {
+	width: 412px;
+	height: 240px;
+	float: left;
+	margin-left: 17px;
+	margin-top: 15px;
+	margin-right: 10px;
+	background: #fff;
+}
+
+.blogs .tit {
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	border-top: 2px solid #138FDD;
+	border-bottom: 1px solid #d5d5d5;
+}
+
+.blogs .tit .title {
+	font-size: 16px;
+	float: left;
+	padding-left: 5px;
+}
+
+.blogs .tit .more {
+	float: right;
+}
+
+.blogs table tr {
+	line-height: 25px;
+}
+
+/*公告*/
+.notice {
+	width: 202px;
+	height: 420px;
+	background: #fff;
+	margin-top: 15px;
+	float: right;
+}
+
+.notice .notice-head {
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	border-top: 2px solid #138FDD;
+	border-bottom: 1px solid #d5d5d5;
+	font-size: 16px;
+}
+
+.notice .notice-tit {
+	padding-left: 5px;
+	float: left;
+	height: 40px;
+	line-height: 40px;
+	font-size: 16px;
+}
+
+.notice .notice-more {
+	height: 40px;
+	line-height: 40px;
+	float: right;
+}
+
+.notice ul li{
+	color: black;
+	line-height: 30px;
+}
+
+
+/*热帖*/
+.Forum {
+	width: 782px;
+	height: 450px;
+	margin-top: 270px;
+	background: #FFF;
+}
+
+.Forum .tit {
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	border-top: 2px solid #138FDD;
+	border-bottom: 1px solid #d5d5d5;
+}
+
+.Forum .tit .title {
+	font-size: 16px;
+	float: left;
+	padding-left: 5px;
+}
+
+.Forum  .tit .more {
+	float: right;
+}
+
+.Forum table tr {
+	line-height: 35px;
+}
+
+/* 教学资源链接*/
+.resources {
+	width: 372px;
+	height: 240px;
+	margin-top: 20px;
+	float: left;
+	margin-right: 15px;
+	background: #fff;
+}
+
+.resources .tit {
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	border-top: 2px solid #138FDD;
+	border-bottom: 1px solid #d5d5d5;
+}
+
+.resources .tit .title {
+	width: auto;
+	font-size: 16px;
+	float: left;
+	padding-left: 5px;
+}
+
+.resources .tit .more {
+	float: right;
+}
+
+.resources ul li a {
+	color: black;
+	line-height: 30px;
+}
+
+/* 教师风采*/
+.elegant {
+	width: 393px;
+	height: 240px;
+	float: left;
+	margin-top: 20px;
+	magin-left: 15px;
+	background: #fff;
+	/* border: 1px solid #ccc; */
+}
+
+.elegant .tit {
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	border-top: 2px solid #138FDD;
+	border-bottom: 1px solid #d5d5d5;
+}
+
+.elegant .tit .title {
+	float: left;
+	font-size: 16px;
+	padding-left: 5px;
+}
+
+.elegant .tit .more {
+	float: right;
+}
+
+.elegant ul li a {
+	color: black;
+	line-height: 30px;
+}
+
+/* 图书推荐*/
+.comment {
+	width: 202px;
+	height: 520px;
+	float: right;
+	margin-top: 20px;
+	background: #FFF;
+	position: absolute;
+	top: 550px;
+	left: 798px;
+}
+
+.comment .tit {
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	border-top: 2px solid #138FDD;
+	border-bottom: 1px solid #d5d5d5;
+}
+
+.comment .tit .title {
+	width: auto;
+	font-size: 16px;
+	float: left;
+	padding-left: 5px;
+}
+
+.comment .tit .more {
+	float: right;
+}
+
+.comment .book {
+	width: 200px;
+	height: 260px;
+	margin-top: 20px;
+}
+
+.comment ul li a {
+	margin-top: 300px; 
+	color : black;
+	line-height: 30px;
+	color: black;
+}

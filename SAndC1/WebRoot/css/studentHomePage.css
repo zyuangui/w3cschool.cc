@@ -1,0 +1,53 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "微软雅黑";
+	list-style: none;
+	text-decoration: none;
+}
+
+body {
+	background: url(images/studentBackground.jpg) no-repeat;
+	background-color: #eaf1fd;
+}
+
+/* 学生主页主体部分的头部 */
+.head {
+	margin: 0 auto;
+	width: 1000px;
+	height: 54px;
+	overflow: hidden;
+	background: rgba(255, 255, 255, 1.00);
+}
+
+.head .logo {
+	float: left;
+}
+
+.head ul {
+	width: 795px;
+	height: auto;
+	overflow: hidden;
+}
+
+.head ul li {
+	line-height: 52px;
+	text-align: center;
+}
+
+.head ul li a {
+	display: block;
+	width: 80px;
+	height: 51px;
+	float: left;
+	line-height: 51px;
+	text-align: center;
+	color: #000;
+}
+
+.head ul li a:hover {
+	border-bottom: 2px solid #6CA3F8;
+	color: #F79A14;
+}

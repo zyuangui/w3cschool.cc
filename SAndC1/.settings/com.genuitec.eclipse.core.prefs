@@ -1,0 +1,3 @@
+eclipse.preferences.version=1
+validator.Checked=src/struts.xml,WebRoot/tea_jsp/teaUploadRes.jsp,WebRoot/tea_jsp/teaHomepage.jsp
+validator.Unchecked=

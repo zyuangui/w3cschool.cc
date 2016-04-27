@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+    <constant name="struts.enable.DynamicMethodInvocation" value="false" />
+    <constant name="struts.devMode" value="true" /> 
+	
+    <package name="default" namespace="/" extends="struts-default">
+    
+    <!-- 学生登录 -->
+    <action name="StuLoginAction" class="cn.edu.jxnu.action.StuLoginAction">
+      <result name="success">/stu_jsp/stuHomepage.jsp</result>
+      <result name="error">/userLogin.jsp</result>
+    </action>
+    
+    <!-- 教师登录 -->
+    <action name="TeaLoginAction" class="cn.edu.jxnu.action.TeaLoginAction">
+       <result name="success">/tea_jsp/teaHomepage.jsp</result>
+       <result name="error">/userLogin.jsp</result>
+    </action>
+    
+    <!-- 教师上传教学资源 -->
+    <action name="ResUploadAction" class="cn.edu.jxnu.action.ResUploadAction">
+       <interceptor-ref name="defaultStack">
+	        <!--允许文件上传的最大的size-->
+	        <param name="fileUplaod.maximumSize">8097152</param>
+	         <!-- 允许文件上传的扩展名 -->
+	         <param name="fileUpload.allowedExtensions">doc,docx,xls,txt,jpg,png,ptf,jpeg</param> 
+	         <!-- 允许文件上传的类型 -->
+	        <param name="fileUpload.allowedTypes">text/plain,application/x-msdownload,application/vnd.ms-excel,image/png,image/jpeg,image/pjeg,image/gif</param>
+	     </interceptor-ref>
+	    <result name="success" type="chain">TeaFindResAction</result>
+	    <result name="input">/tea_jsp/upload-error.jsp</result> 
+    </action>
+    
+    <!-- 学生下载教学资源 -->
+    <action name="ResDownloadAction" class="cn.edu.jxnu.action.ResDownloadAction">
+	<result name="download" type="stream">
+		<!-- inputName下载文件的来源流，对应着action类中某个类型为InputStream的属性名 输入流的名字 获取inputStream -->
+		<param name="inputName">inputStream</param>
+		<!-- 文件下载的处理方式 通过ognl表达式来获取文件的名字 attachment以附件的形式打开 -->
+		<param name="contentDisposition">attachment;fileName="${fileName}"</param>
+	</result>
+    </action>
+    
+    <!-- 寻找教学资源 -->
+    <action name="TeaFindResAction" class="cn.edu.jxnu.action.TeaFindResAction">
+       <result name="success">/tea_jsp/teaUploadRes.jsp</result>
+    </action>
+    
+    <!-- 寻找学生个人信息 -->
+    <action name="FindStuInfoAction" class="cn.edu.jxnu.action.FindStuInfoAction">
+       <result name="success">/stu_jsp/stuPersonInfo.jsp</result>
+    </action>
+    
+    <!-- 寻找教师个人信息 -->
+    <action name="FindTeaInfoAction" class="cn.edu.jxnu.action.FindTeaInfoAction">
+       <result name="success">/tea_jsp/teaPersonInfo.jsp</result>
+    </action>
+    
+    
+    <action name="UserLoginAction" class="cn.edu.jxnu.action.UserLoginAction">
+	    <result name="success">/login-success.jsp</result>
+	    <result name="error">/index.jsp</result>
+    </action>
+    </package>
+
+</struts>

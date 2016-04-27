@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* CSS Document */
+*{ margin:0; padding:0; list-style:none; text-decoration:none;}
+.body{ margin:20px auto; width:1000px; height:auto; position:relative; }
+.body .body-left{ margin-top:15px; width:170px; height:500px; background:white; border-radius:4px;}
+.body .body-left ul{width:170px;}
+.body .body-left ul a{ display:block; width:170px; height:40px; line-height:40px; text-indent:25px; margin-bottom:3px; font-size:16px;}
+.body .body-left ul a:hover,.body .body-left a.Home,.body .body-left a.Home2{background:rgba(73,146,233,1.00); color:white;}
+
+.body .body-right{ background:rgba(252,249,249,1.00); width:815px; height:700px; position:absolute; left:185px; top:0px; border-radius:0 0 6px 4px;}
+
+.body .body-right .body-right1{width:100%; height:60px; line-height:60px; border-bottom:1px solid rgba(73,146,233,1.00);}
+.body .body-right .body-right1 h2{float:left; margin-left:20px;}
+.body .body-right .body-right1 .upload{float:right; width:500px;}
+.body .body-right .body-right1 a{display:block; background:rgba(185,205,235,0.30); float:right; margin-top:10px; width:100px; height:40px; line-height:40px; text-align:center; border:1px solid rgba(73,146,233,1.00);}
+.body .body-right .body-right1 a:hover{background:rgba(185,205,235,1.00);}
+
+.body .body-right .body-right2 .body-right2-1{border:1px solid red;width:100%;border:1px solid rgba(185,205,235,0.30);}
+.body .body-right .body-right2 .body-right2-1 td{display:inline-block;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;line-height:45px; height:45px; text-align:center;}
+.foot{position:absolute; top:0;}
+#name{border:1px solid red;width:400px;float:left;text-align:center;height:30px;}
+#time{border:1px solid red;width:400px;float:left;text-align:center;height:30px;}
+.body .body-right .body-right2 .body-right2-1 ul li{border:1px solid red;width:400px;float:left;height:30px;}
+#time1{text-align:center;}
+/* .body .body-right .body-right2 .body-right2-1 ul li{float:left;padding-left:200px;padding-right:100px;border:1px solid red;}
+.body .body-right .body-right2 .body-right2-1 ul li,.name,.time{float:left;padding-left:200px;padding-right:100px;} */
